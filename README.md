@@ -7,5 +7,13 @@
   - SQLALCHEMY_DATABASE_URI
   - SECRET_KEY
   - JWT_SECRET_KEY
+- Cambiar en tests/test.py, tests/test_arbitrajetasas.py, cotizaciones.py:
+  - HOST
+  - PORT
+  
+## Para ejecutarlo:
+flask run --host:HOST
 
+## Cotizaciones (cotizaciones.py):
+Se pueden ver todas las puntas que hay para cada ticker en todos los plazos.
 
