@@ -24,7 +24,7 @@ def on_marketdata(tipo, data):
         #print("Watch", data)
         return(data["ticker"],data["plazo"],data["u"])
 
-dev.init('http://173.31.3.76:5000', 'test', 'test', 0, on_marketdata) 
+dev.init('http://HOST:PORT', 'test', 'test', 0, on_marketdata) 
 
 dev.operarBYMA(idCuenta = 1, TipoOperacion = 1, Ticker = 'A2E7', Plazo = 2, Cantidad = 4000, Precio = 36.4, idMoneda = 1)
 dev.operarBYMA(idCuenta = 1, TipoOperacion = 2, Ticker = 'A2E7', Plazo = 2, Cantidad = 1000, Precio = 37, idMoneda = 1)
