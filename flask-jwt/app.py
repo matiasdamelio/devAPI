@@ -14,10 +14,9 @@ import datetime
 app = Flask(__name__)
 api = Api(app)
 
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:admin@192.168.50.101:5432/postgres'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://DB_USER:PASSWORD@HOST:PORT/DATABASE'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SECRET_KEY'] = 'mdamelio'
+app.config['SECRET_KEY'] = 'XXXXX'
 
 db = SQLAlchemy(app)
 
@@ -25,7 +24,7 @@ db = SQLAlchemy(app)
 def create_tables():
     db.create_all() 
 
-app.config['JWT_SECRET_KEY'] = 'matias2010'
+app.config['JWT_SECRET_KEY'] = 'XXXXX'
 jwt = JWTManager(app)
 
 app.config['JWT_BLACKLIST_ENABLED'] = True
