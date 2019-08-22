@@ -87,7 +87,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         passw = 'matias2019'
         codigo = 1111
         
-        dev.init('http://173.31.3.76:5000', user, passw, codigo, on_marketdata)
+        dev.init('http://HOST:PORT', user, passw, codigo, on_marketdata)
         
         self.tableWidget.setEnabled(True)
                        
