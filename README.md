@@ -12,7 +12,7 @@
   - PORT
   
 ## Para ejecutarlo:
-flask run --host:HOST
+flask run --host=HOST
 
 ## Cotizaciones (cotizaciones.py):
 Se pueden ver todas las puntas que hay para cada ticker en todos los plazos.
