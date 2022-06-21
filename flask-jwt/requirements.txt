@@ -3,7 +3,7 @@ Flask-JWT-Extended==3.21.0
 Flask-RESTful==0.3.7
 Flask-SQLAlchemy==2.4.0
 more-itertools==7.0.0
-numpy==1.16.4
+numpy==1.22.0
 numpydoc==0.9.1
 pandas==0.24.2
 passlib==1.7.1
